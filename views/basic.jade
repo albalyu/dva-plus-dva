@@ -1,0 +1,26 @@
+doctype
+head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    link(type='text/css' rel='stylesheet' href='/css/font-awesome.min.css')
+    link(type='text/css' rel='stylesheet' href='/css/alerts/alertify.min.css')
+    link(type='text/css' rel='stylesheet' href='/css/alerts/themes/default.min.css')
+
+body
+    .container
+        .row
+            .col-md-12
+                h1.text-center= title
+                ul.nav.nav-pills
+                    each data, link in links
+                        if data.render
+                            li(role='presentation')
+                                a(href='/'+link)= data.title
+        block content
+
+    script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    script(type='text/javascript' src='/js/blockui.min.js')
+    script(type='text/javascript' src='/js/alertify.min.js')
+    script(type='text/javascript' src='/js/script.js')
