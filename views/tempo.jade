@@ -3,10 +3,4 @@ html
 
     body
         h1 Tmp page
-        - each i in arr
-            div
-                - var el = arr[i]
-                - if (typeof(el.v0) == "number")
-                    span #{el.v0}
-                - else
-                    input(type='text')
+            div #{typeof(arr)}
