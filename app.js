@@ -7,6 +7,7 @@ var express = require('express'),
 
 app.disable('x-powered-by');
 app.set('view engine', 'jade');
+app.set('views', './views');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
