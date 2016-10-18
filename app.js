@@ -34,7 +34,20 @@ app.post('/signin', function (req, res) {
 });
 
 app.get('/tempo', function (req, res) {
-    res.render('tempo');
+    var data = {
+        arr: [
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: '?', 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+            {0: 1, 1: 5, 2: '?', opp1: '+', opp2: '?'},
+        ]
+    };
+
+    res.render('tempo', data);
 });
 
 app.get('/:page?', function (req, res) {
