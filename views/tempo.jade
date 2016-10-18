@@ -6,7 +6,7 @@ html
         - each i in arr
             div
                 - var el = arr[i]
-                - if (typeof(el[0]) == "number")
-                    span #{el[0]}
+                - if (typeof(el.v0) == "number")
+                    span #{el.v0}
                 - else
                     input(type='text')
