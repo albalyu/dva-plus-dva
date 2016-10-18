@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('.exersise').on('click', 'input', function (e) {
+    $('.exersise').on('change', 'input', function (e) {
         //e.target.id
-        alert(e.delegateTarget.id.substr(4));
+        alert(e.delegateTarget.id.substr(4) + ' ' + e.currentTarget.val());
     });
 });
