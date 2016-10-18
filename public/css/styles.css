@@ -5,3 +5,9 @@ input {
 span {
     margin-left: 10px;
 }
+#exersises div {
+    margin-top: 10px;
+}
+#exersises div:first-child {
+    margin-top: 0;
+}
