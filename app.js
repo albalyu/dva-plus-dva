@@ -37,7 +37,7 @@ app.get('/tempo', function (req, res) {
     var data = {
         arr: [
             {v0: 1, v1: 5, v2: '?', opp1: '+', opp2: '?'},
-            {v0: 1, v1: 5, v2: '?', opp1: '+', opp2: '?'},
+            {v0: '?', v1: 10, v2: 15, opp1: '+', opp2: '='},
             {v0: 1, v1: 5, v2: '?', opp1: '+', opp2: '?'},
             {v0: 1, v1: 5, v2: '?', opp1: '+', opp2: '?'},
             {v0: 1, v1: 5, v2: '?', opp1: '+', opp2: '?'},
