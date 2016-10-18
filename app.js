@@ -33,6 +33,10 @@ app.post('/signin', function (req, res) {
 
 });
 
+app.get('/tempo', function (req, res) {
+    res.render('tempo');
+});
+
 app.get('/:page?', function (req, res) {
 
     var url = req.url;
