@@ -1,12 +1,14 @@
 html
     head
         link(rel="stylesheet" type="text/css" href="/css/styles.css")
+        script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+        script(type='text/javascript' src='/js/scripts.js')
 
     body
         h1 Tmp page
         #exersises
             - for (var i = 0; i < arr.length; i++)
-                div(id='div_'+i)
+                div.exersise(id='div_'+i)
                     - each val, key in ['v0', 'opp1', 'v1', 'opp2', 'v2']
                         if arr[i][val] == '?'
                             input(type='text')
