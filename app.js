@@ -6,7 +6,7 @@ var express = require('express'),
     users = require('./users');
 
 app.disable('x-powered-by');
-app.set('view engine', 'pug');
+app.set('view engine', 'jade');
 app.set('views', './views');
 
 app.use(bodyParser.urlencoded({ extended: false }));
