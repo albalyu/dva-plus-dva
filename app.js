@@ -77,6 +77,6 @@ app.get('/:page?', function (req, res) {
 
 });
 
-server = app.listen(80, function () {
-    console.log('Application:80');
+server = app.listen(8080, function () {
+    console.log('Application:8080');
 });
