@@ -18,6 +18,7 @@ describe('fib', function () {
     });
 
     beforeEach(() => {
+        testNumber++;
         console.log("start Test ", testNumber);
     });
 
