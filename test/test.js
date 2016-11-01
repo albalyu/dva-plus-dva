@@ -42,8 +42,11 @@ describe('fib', function () {
         assert.equal(0, fib(0));
     });
 
-    it('fib check4', function () {
-        assert.equal(1, fib(1));
-        assert.equal(0, fib(0));
-    });
+    for (var i = 0; i < 10; i++) {
+        it('fib check4_'+i, function () {
+            assert.equal(1, fib(1));
+            assert.equal(0, fib(0));
+        });
+
+    }
 });/**/
